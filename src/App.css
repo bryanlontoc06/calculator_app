@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +39,75 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.Input {
+  font-size: 2em;
+  text-align: right;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 3px #888888;
+}
+
+.Buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Button {
+  font-size: 1.5em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 5px 5px 5px 1px rgb(0 0 0 / 30%);
+  border-radius: 100%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.Button:hover {
+  background-color: rgba(51, 51, 51, 0.2);
+  color: #4169e1;
+}
+
+.royal-blue {
+  background-color: #4169e1;
+}
+
+.no-bg {
+  background-color: unset;
+  color: #4169e1;
+}
+
+.Result {
+  font-size: 2em;
+  text-align: right;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+  box-shadow: inset 0 0 3px #888888;
+  height: 3rem;
 }
